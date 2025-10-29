@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>FART ARMY LEADER RECRUITMENT</title>
+    <style>
+        #fart{
+            margin: auto;
+            text-align: center;
+            font-size: large;
+            border: solid 5px darkgoldenrod;
+            background-color: green;
+            width: 50%;
+            height: 100%;
+        }
+        #portal{
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 50%;
+        }
+        body{
+            background-color: rgb(85, 65, 0);
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var audios = [];
+        const stinkyones = new Audio("media/TheStinkyOnes.mp3");
+        stinkyones.loop = true;
+        for(let i = 1; i <= 4; i++) {
+            audios.push(new Audio("media/"+i+".mp3"));
+        }
+        var random = () => {
+            audios[Math.floor(Math.random() * (audios.length-1))].play();
+        }
+    </script>
+    <div id="fart">
+        <p>ESCAPE THE GREAT FART MAZE TO BECOME THE NEW LEADER OF <a href="https://www.roblox.com/communities/33708448/LPI-FART-ARMY#!/about" target="_blank">LPI FART ARMY!</a><br>
+        THE GREAT FART MAZE TAKES PLACE INSIDE THE INTESTINES OF THE GREAT STINKY ONE!<br>
+        ESCAPE BY GOING OUT THROUGH THE <a href="#" onclick="random()">GYATT HOLE</a> OF THE GREAT STINKY ONE!
+        </p>
+        <a id="portal" href="TheGreatFartMaze.html">
+            ENTER MAZE HERE!<br>
+            <a href="#" onclick="stinkyones.play()"><img src="media/fartleader.jpg"></a>
+        </a>
+        <p>
+            HES GOT ALOT OF GAS AND INTERCONNECTED INTESTINES THAT FORM A MASSIVE MAZE!<br>
+            HE IS ALSO AN ELITE FART ARMY WARRIOR!<br>
+            GOOD LUCK!
+        </p>
+    </div>
+</body>
+</html>
